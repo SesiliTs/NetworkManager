@@ -12,7 +12,7 @@ enum NetworkError: Error {
 
 public class NetworkService {
     
-    static var shared = NetworkService()
+    public static var shared = NetworkService()
     
     let session: URLSession
     
