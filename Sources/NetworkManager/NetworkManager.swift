@@ -22,7 +22,7 @@ public class NetworkService {
         self.session = urlSession
     }
     
-    func getData<T: Codable>(urlString: String, completion: @escaping (Result<T, Error>) -> Void) {
+    public func getData<T: Decodable>(urlString: String, completion: @escaping (Result<T, Error>) -> Void) {
         let url = URL(string: urlString)!
 
         session.dataTask(with: URLRequest(url: url)) { data, response, error in
