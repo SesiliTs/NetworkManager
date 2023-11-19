@@ -10,7 +10,7 @@ enum NetworkError: Error {
     case wrongStatusCode(code: Int)
 }
 
-class NetworkService {
+public class NetworkService {
     
     static var shared = NetworkService()
     
