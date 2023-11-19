@@ -16,7 +16,7 @@ public class NetworkService {
     
     let session: URLSession
     
-    init() {
+    public init() {
         let urlSessionConfiguration = URLSessionConfiguration.default
         let urlSession = URLSession(configuration: urlSessionConfiguration)
         self.session = urlSession
