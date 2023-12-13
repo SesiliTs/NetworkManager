@@ -58,7 +58,7 @@ public class NetworkService {
                     completion(.success(object))
                 }
             } catch {
-                print("Decoding error: \(error.localizedDescription)")
+                print("Decoding error: \(error)")
                 completion(.failure(NetworkError.decodeError))
             }
         }.resume()
